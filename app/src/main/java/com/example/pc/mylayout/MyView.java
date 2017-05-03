@@ -98,7 +98,7 @@ public class MyView extends View {
     @Override
     public boolean onGenericMotionEvent(MotionEvent event) {
 
-//        Log.e(TAG, "onGenericMotionEvent: "+"Action: "+event.getAction());
+        Log.e(TAG, "onGenericMotionEvent: "+"Action: "+event.getAction());
         switch (event.getAction()) {
             case MotionEvent.ACTION_MOVE:
 

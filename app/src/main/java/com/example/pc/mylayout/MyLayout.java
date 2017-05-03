@@ -19,6 +19,12 @@ public class MyLayout extends LinearLayout {
         super(context);
     }
 
+    public RockerView rockerView1;
+    public RockerView rockerView2;
+
+    public float rocker_x1,rocker_y1,rocker_x2,rocker_y2,triger_l2,triger_r2;
+
+
     public MyLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         // TODO Auto-generated constructor stub
@@ -58,7 +64,7 @@ public class MyLayout extends LinearLayout {
 //
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        Log.e(TAG, "onKeyDown: "+keyCode);
+//        Log.e(TAG, "onKeyDown: "+keyCode);
         switch (keyCode){
 
             case KeyEvent.KEYCODE_CALL:return true;
@@ -80,38 +86,41 @@ public class MyLayout extends LinearLayout {
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        Log.e(TAG, "onKeyUp: "+keyCode);
+//        Log.e(TAG, "onKeyUp: "+keyCode);
         return super.onKeyUp(keyCode, event);
     }
 
     private static float[]  mValue = new float[46];
 
-    @Override
-    public boolean onGenericMotionEvent(MotionEvent event) {
-
-        Log.e(TAG, "onGenericMotionEvent: "+"Action: "+event.getAction());
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_MOVE:
-
-                break;
-        }
-
-        for (int n = 0; n<46; n++){
-            float move = event.getAxisValue(n);
-            if (mValue[n] != move){
-                Log.e(TAG, "onGenericMotionEvent: "+n+" "+move);
-                mValue[n] = move;
-            }
-
-        }
-//        final float movex = event.getAxisValue(MotionEvent.AXIS_X);
-//        final float movey = event.getAxisValue(MotionEvent.AXIS_Y);
-//        final float moverx = event.getAxisValue(MotionEvent.AXIS_RX);
-//        final float movery = event.getAxisValue(MotionEvent.AXIS_RY);
+//    @Override
+//    public boolean onGenericMotionEvent(MotionEvent event) {
 //
-//        Log.e(TAG, "onGenericMotionEvent: "+movex+" "+movey+" "+moverx+" "+movery);
-//        return super.onGenericMotionEvent(event);
-        return false;
-    }
+//        Log.e(TAG, "onGenericMotionEvent11: "+"Action: "+event.getAction());
+//        switch (event.getAction()) {
+//            case MotionEvent.ACTION_MOVE:
+//
+//                break;
+//        }
+//
+//        for (int n = 0; n<46; n++){
+//            float move = event.getAxisValue(n);
+//            if (mValue[n] != move){
+//                Log.e(TAG, "onGenericMotionEvent: "+n+" "+move);
+//                mValue[n] = move;
+//            }
+//
+//        }
+////        final float movex = event.getAxisValue(MotionEvent.AXIS_X);
+////        final float movey = event.getAxisValue(MotionEvent.AXIS_Y);
+////        final float moverx = event.getAxisValue(MotionEvent.AXIS_RX);
+////        final float movery = event.getAxisValue(MotionEvent.AXIS_RY);
+////
+////        Log.e(TAG, "onGenericMotionEvent: "+movex+" "+movey+" "+moverx+" "+movery);
+////        return super.onGenericMotionEvent(event);
+//        return false;
+//    }
 
 }
+
+
+

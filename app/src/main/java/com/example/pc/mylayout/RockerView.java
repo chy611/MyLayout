@@ -267,6 +267,7 @@ public class RockerView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.e(TAG, "onTouchEvent: "+event);
+
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:// 按下
                 // 回调 开始
@@ -276,6 +277,7 @@ public class RockerView extends View {
                 float moveY = event.getY();
                 mRockerPosition = getRockerPositionPoint(mCenterPoint, new Point((int) moveX, (int) moveY), mAreaRadius, mRockerRadius);
                 moveRocker(mRockerPosition.x, mRockerPosition.y);
+                Log.e(TAG, "onTouchEvent: "+moveX+","+moveY+","+mRockerPosition.x+","+mRockerPosition.y);
                 break;
             case MotionEvent.ACTION_UP:// 抬起
             case MotionEvent.ACTION_CANCEL:// 移出区域

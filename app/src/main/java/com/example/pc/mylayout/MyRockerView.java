@@ -15,6 +15,8 @@ public class MyRockerView extends RockerView{
 
     private String TAG = getClass().getSimpleName();
 
+    public static float x1,y1,x2,y2;
+
     public MyRockerView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -26,8 +28,14 @@ public class MyRockerView extends RockerView{
 //    }
 
     public void move(float x, float y){
+        float movex, movey;
+        movex = (x+1)*256 + 1;
+        movey = (y+1)*256 + 1;
+
         this.callBackStart();
-        this.moveRocker(x, y);
+        this.moveRocker(movex, movey);
+
+        Log.e(TAG, "move: "+movex+","+movey);
 
     }
 

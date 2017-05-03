@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:id="@+id/mylayout"
     android:orientation="vertical"
-    >
+    android:weightSum="1">
     <!--<com.example.pc.mylayout.MyLayout1  -->
         <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
         <!--android:layout_width="fill_parent"-->
@@ -23,67 +23,40 @@
 
 
 
-    <!--<com.example.pc.mylayout.MyView-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="新游手柄HID测试工具"-->
-        <!--android:id="@+id/myView"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:gravity="center"/>-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="116dp"
+        android:text="新游手柄HID测试工具"
+        android:id="@+id/myView"
+        android:layout_gravity="center"
+        android:gravity="center" />
 
-    <LinearLayout
+    <com.example.pc.mylayout.MyLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="188dp"
         android:id="@+id/mylayout2">
 
-        <com.example.pc.mylayout.RockerView
+        <com.example.pc.mylayout.MyRockerView
             android:id="@+id/rockerView1"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             kongqw:rockerRadius="30dp" />
 
-        <com.example.pc.mylayout.RockerView
+        <com.example.pc.mylayout.MyRockerView
             android:id="@+id/rockerView2"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             kongqw:rockerRadius="30dp" />
 
-    </LinearLayout>
+    </com.example.pc.mylayout.MyLayout>
 
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/numberbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="botton2"-->
-        <!--android:id="@+id/myBotton"/>-->
-
+        />
 
 </com.example.pc.mylayout.MyLayout>
-
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--tools:context="com.example.pc.mylayout.MainActivity">-->
-
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--app:layout_constraintRight_toRightOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--</android.support.constraint.ConstraintLayout>-->
-
-    <!--kongqw:areaBackground="@drawable/default_area_bg"-->
-    <!--kongqw:rockerBackground="@drawable/default_rocker_bg"-->
-
-    <!--kongqw:areaBackground="@drawable/default_area_bg"-->
-    <!--kongqw:rockerBackground="@drawable/default_rocker_bg"-->
