@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">MyLayout</string>
+    <string name="app_name">新游手柄HID测试工具</string>
+    <string name="r2">右扳机键R2</string>
+    <string name="l2">左扳机键L2</string>
 </resources>

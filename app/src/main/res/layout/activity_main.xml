@@ -23,13 +23,13 @@
 
 
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="116dp"
-        android:text="新游手柄HID测试工具"
-        android:id="@+id/myView"
-        android:layout_gravity="center"
-        android:gravity="center" />
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="116dp"-->
+        <!--android:text="新游手柄HID测试工具"-->
+        <!--android:id="@+id/myView"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center" />-->
 
     <com.example.pc.mylayout.MyLayout
         android:layout_width="match_parent"
@@ -52,11 +52,94 @@
 
     </com.example.pc.mylayout.MyLayout>
 
-    <com.daimajia.numberprogressbar.NumberProgressBar
-        android:id="@+id/numberbar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
 
-        />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/r2"
+            android:gravity="center"
+            />
+
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/numberbar_r2"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/l2"
+            android:gravity="center"
+            />
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/numberbar_l2"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+
+            />
+    </LinearLayout>
+
+
+    <!--<org.adw.library.widgets.discreteseekbar.DiscreteSeekBar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/newbar1"-->
+
+        <!--/>-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/showkey"
+        >
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="按键："
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/keyname"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="键值："
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/keycode"
+                />
+        </TableRow>
+    </TableLayout>
 
 </com.example.pc.mylayout.MyLayout>
