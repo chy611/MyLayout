@@ -34,23 +34,134 @@
     <com.example.pc.mylayout.MyLayout
         android:layout_width="match_parent"
         android:layout_height="188dp"
-        android:id="@+id/mylayout2">
+        android:id="@+id/mylayout2"
+        android:orientation="horizontal">
 
-        <com.example.pc.mylayout.MyRockerView
-            android:id="@+id/rockerView1"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="180dp"
-            kongqw:rockerRadius="30dp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
-        <com.example.pc.mylayout.MyRockerView
-            android:id="@+id/rockerView2"
+            <com.example.pc.mylayout.MyRockerView
+                android:id="@+id/rockerView1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                kongqw:rockerRadius="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="180dp"
-            kongqw:rockerRadius="30dp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.pc.mylayout.MyRockerView
+                android:id="@+id/rockerView2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                kongqw:rockerRadius="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
 
     </com.example.pc.mylayout.MyLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="左摇杆"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="右摇杆"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="x:"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/rocker_x1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="x:"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/rocker_x2"
+                />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="y:"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/rocker_y1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="y:"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/rocker_y2"
+                />
+        </TableRow>
+
+    </TableLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,19 +205,15 @@
             />
     </LinearLayout>
 
-
-    <!--<org.adw.library.widgets.discreteseekbar.DiscreteSeekBar-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/newbar1"-->
-
-        <!--/>-->
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:id="@+id/showkey"
         >
+        <TableRow>
+
+        </TableRow>
+
         <TableRow>
             <TextView
                 android:layout_width="0dp"

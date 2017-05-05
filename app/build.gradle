@@ -32,5 +32,8 @@ dependencies {
 
     compile 'org.adw.library:discrete-seekbar:1.0.1'
 
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
 //    compile 'com.github.kongqw:AndroidRocker:1.0.1'
 }
